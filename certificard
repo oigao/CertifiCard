@@ -1,0 +1,187 @@
+function mudarTema() {
+  document.body.classList.toggle("light");
+}
+body {
+  background: rgb(220,220,220);
+background: linear-gradient(25deg, rgba(220,220,220,1) 20%, rgba(237,194,36,1) 80%);
+  );
+  font-family: 'Pacifico', cursive;
+}
+
+.container {
+  background: #1C1C1C;
+  color: #FFFAFA;
+  margin: 65px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #363636;
+  padding: 65px;
+}
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+.perfil {
+  display: flex;
+  align-items: center;
+}
+.perfil-foto {
+  max-height: 300px;
+  align-items: center;
+}
+.titulo {
+  margin-left: 15px;
+  font-align: center;
+}
+.titulo h1 {
+  font-weight: 700;
+  font-size: 35px;
+}
+.titulo h2 {
+  font-weight: 400;
+  font-size: 25px;
+}
+.titulo h4 {
+  font-weight: 200;
+  font-size: 15px;
+}
+.tema button{
+  align-self: flex-end;
+  font-size: 25px;
+  font-weight: 400;
+  padding: 8px 16px;
+  backgound: background: rgb(237,194,36);
+  background: linear-gradient(25deg, rgba(237,194,36,1) 20%, rgba(220,220,220,1) 80%);;
+  border-radius: 100px;
+  border: 2px solid #D3D3D3;
+}
+
+.projetos {
+  backgound: background: rgb(237,194,36);
+  background: linear-gradient(25deg, rgba(237,194,36,1) 20%, rgba(220,220,220,1) 80%);;
+  margin: 65px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #363636;
+  padding: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  color: #1C1C1C;
+}
+.projetos h3 {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+}
+.projetos li {
+  font-weight: 400;
+  font-size: 30px;
+  font-family: 'Pacifico', cursive;
+}
+main ul li {
+  transition: transform 0.4s;
+}
+main ul li:hover {
+  transform: scale(1.2)
+}
+a:visited, a:link {
+  text-decoration: none;
+  color: #8F661A;
+}
+
+a:hover {
+  color: #DBA43D;  
+}
+.contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.contato h3 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.contato img {
+  max-width: 50px;
+  max-height: 50px;
+}
+.light {
+  background: rgb(28,28,28);
+background: linear-gradient(25deg, rgba(28,28,28,1) 20%, rgba(237,194,36,1) 80%);
+}
+
+.light .container {
+  background: #D3D3D3;
+  color: #1C1C1C;
+}
+.light .projetos {
+  background: rgb(237,194,36);
+background: linear-gradient(25deg, rgba(237,194,36,1) 20%, rgba(28,28,28,1) 80%);
+  color: #D3D3D3;
+}
+.light .tema button {
+  border: 2px solid #A9A9A9;
+  background: rgb(237,194,36);
+background: linear-gradient(25deg, rgba(237,194,36,1) 20%, rgba(28,28,28,1) 80%);
+  color: #D3D3D3;
+}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Portifólio | iD3 Aula 09</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <div class="container">
+    <header class="cabecalho">
+      <div class="perfil">
+        <img class="perfil-foto" src="https://avatars.githubusercontent.com/u/112963287?v=4" />
+        <div class='titulo'>
+          <h1>Igor Alves C. H.</h1>
+          <h2>Estudante de Design, Back-end & Front-end</h2>
+          <h4>#imersaodev</h4>
+        </div>
+      </div>
+      <div class="tema">
+        <button onclick="mudarTema()">Alterar Tema</button>
+      </div>
+    </header>
+    <main class="projetos">
+      <h3>⇣ Projetos ⇣</h3>
+      <ul>
+        <br>
+        <li><a href="https://codepen.io/oigao/full/YzLPgKP" target="_blank">Calculador de Médias🧮</a></li>
+        <br>
+        <li><a href="https://codepen.io/oigao/full/KKRpGBa" target="_blank">Conversor de Moedas💱</a></li>
+        <br>
+        <li><a href="https://codepen.io/oigao/full/YzLygNm" target="_blank">Mentalista💭</a></li>
+        <br>
+        <li><a href="https://codepen.io/oigao/full/Baxjroy" target="_blank">AluraFlix🎬</a></li>
+        <br>
+        <li><a href="https://codepen.io/oigao/full/dyepPNL" target="_blank">Tabelas📊</a></li>
+        <br>
+        <li><a href="https://codepen.io/oigao/full/MWGjRXr" target="_blank">Super Verse🃏</a></li>
+      </ul>
+    </main>
+    <footer class="contato">
+      <h3>Contato</h3>
+      <p>
+        <a href="https://github.com/oigao" target="_blank"><img src="https://cdn.iconscout.com/icon/free/png-256/github-3691248-3073768.png"></a>
+        <a href="https://www.linkedin.com/in/igão-a-83b48b24b/" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin-circled--v1.png"></a>
+        <a href="https://codepen.io/oigao" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/codepen.png"></a>
+        <a href="https://www.instagram.com/oigaobrisou.exe/" target="_blank"><img src="https://img.icons8.com/ios-glyphs/2x/instagram-new.png"></a>
+      </p>
+    </footer>
+  </div>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
